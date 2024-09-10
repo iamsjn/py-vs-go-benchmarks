@@ -61,6 +61,6 @@ if __name__ == "__main__":
     separate_time = timeit.timeit(benchmark_separate, number=5)
     simultaneous_time = timeit.timeit(benchmark_simultaneous, number=5)
     
-    print(f"Time taken with separate access: {separate_time}")
-    print(f"Time taken with simultaneous access: {simultaneous_time}")
+    print(f"Time taken with separate access: {separate_time}s")
+    print(f"Time taken with simultaneous access: {simultaneous_time}s")
 

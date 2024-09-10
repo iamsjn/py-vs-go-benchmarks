@@ -6,7 +6,7 @@ class WorkerClass:
         self.counter = 0
 
     def work(self):
-        for _ in range(1000000):
+        for _ in range(10000000):
             self.counter += 1
 
 def run_threads(num_workers):
@@ -37,6 +37,6 @@ if __name__ == "__main__":
     threads_time = timeit.timeit(benchmark_threads, number=5)
     sequential_time = timeit.timeit(benchmark_sequential, number=5)
     
-    print(f"Time taken with threads: {threads_time}")
-    print(f"Time taken sequentially: {sequential_time}")
+    print(f"Time taken with threads: {threads_time}s")
+    print(f"Time taken sequentially: {sequential_time}s")
 
