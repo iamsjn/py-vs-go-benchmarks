@@ -6,7 +6,7 @@ class WorkerClass:
         self.counter = 0
 
     def work(self):
-        for _ in range(10000000):
+        for _ in range(1000000):
             self.counter += 1
 
 def run_threads(num_workers):
